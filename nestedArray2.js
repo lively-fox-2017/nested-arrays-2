@@ -25,3 +25,5 @@ var roster = [['Number','Name', 'Position', 'Points per Game'],
 ]
 var object_roster = convert_roster_format(roster);
 console.log(object_roster);
+console.log(object_roster[1]['Number']);
+console.log(object_roster[1].Name);
