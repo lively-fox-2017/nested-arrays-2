@@ -10,35 +10,16 @@ var roster = [
 function convert_roster_format(roster){
   var arrOfObj = [];
   for (var i = 1; i < roster.length; i++) {
-    var number = '';
-    var name = '';
-    var position = '';
-    var points = '';
-
+    var obj = {};
     for (var j = 0; j < roster[i].length; j++) {
-      if(roster[0][j] === "Number"){
-        number = roster[i][j];
-      }else if(roster[0][j] === "Name"){
-        name = roster[i][j];
-      }else if(roster[0][j] === "Posisition"){
-        position = roster[i][j];
-      }else if(roster[0][j] === "Points per Game"){
-        points = roster[i][j];
-      }
+      obj[roster[0][j]] = roster[i][j];
     }
-
-    var obj = {
-      number : number,
-      name : name,
-      position : position,
-      pointsPerGame : points
-    }
-    arrOfObj.push(obj)
+    arrOfObj.push(obj);
   }
   return arrOfObj;
 }
 
-convert_roster_format(roster);
+console.log(convert_roster_format(roster));
 
 var object_roster = convert_roster_format(roster);
 console.log(object_roster[2]);
