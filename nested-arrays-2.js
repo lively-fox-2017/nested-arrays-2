@@ -19,7 +19,7 @@ function convert_roster_format(roster){
   return arrOfObj;
 }
 
-console.log(convert_roster_format(roster));
+convert_roster_format(roster);
 
 var object_roster = convert_roster_format(roster);
 console.log(object_roster[2]);
