@@ -33,7 +33,8 @@ function ConvertArrayToObject(arr){
 		temp.push(myObj)
 	}
 
-	return temp
+	arr=temp;
+	return arr;
 }
 
 console.log(ConvertArrayToObject(roster))
