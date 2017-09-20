@@ -17,11 +17,11 @@ function convert_roster_format(roster){
 
     for (var j = 0; j < roster[i].length; j++) {
       if(roster[0][j] === "Number"){
-        number += roster[i][j];
+        number = roster[i][j];
       }else if(roster[0][j] === "Name"){
-        name += roster[i][j];
+        name = roster[i][j];
       }else if(roster[0][j] === "Posisition"){
-        position += roster[i][j];
+        position = roster[i][j];
       }else if(roster[0][j] === "Points per Game"){
         points = roster[i][j];
       }
